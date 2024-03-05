@@ -1,6 +1,8 @@
 import { motion } from "framer-motion";
 import { styles } from "../styles";
 import { ComputersCanvas } from "./canvas";
+import { githubLink, linkedinLink } from "../constants";
+import { github, linkedin } from "../assets";
 
 const Hero = () => {
   return (
@@ -19,6 +21,32 @@ const Hero = () => {
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
             I develop stunning Mobile and Web applications
           </p>
+          <div className="flex flex-row items-center justify-center gap-2 mt-5 max-w-36 bg-[#915eff] rounded-3xl p-0">
+            <a
+              href={githubLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="relative z-10"
+            >
+              <img
+                src={github}
+                alt="github profile"
+                className="w-8 h-8 sm:w-10 sm:h-10 lg:w-12 lg:h-12 cursor-pointer"
+              />
+            </a>
+            <a
+              href={linkedinLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="relative z-10"
+            >
+              <img
+                src={linkedin}
+                alt="linkedin profile"
+                className="w-10 h-10 sm:w-12 sm:h-12 lg:w-14 lg:h-14 cursor-pointer"
+              />
+            </a>
+          </div>
         </div>
       </div>
       <ComputersCanvas />

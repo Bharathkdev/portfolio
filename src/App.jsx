@@ -8,8 +8,8 @@ import {
   Tech,
   Works,
   StarsCanvas,
+  Achievements,
 } from "./components";
-import Achievements from "./components/Achievements";
 
 const App = () => {
   return (
