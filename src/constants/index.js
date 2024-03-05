@@ -37,6 +37,10 @@ export const navLinks = [
     title: "Contact",
   },
   {
+    id: "blog",
+    title: "Blog",
+  },
+  {
     id: "resume",
     title: "Download Resume",
   },
@@ -264,6 +268,9 @@ const githubLink = "https://github.com/Bharathkdev";
 
 const linkedinLink = "https://www.linkedin.com/in/bharathrna/";
 
+const blogLink =
+  "https://engineering.rently.com/fastlane-build-and-ship-your-app-autonomously/";
+
 export {
   Introduction,
   services,
@@ -271,6 +278,7 @@ export {
   experiences,
   achievements,
   projects,
+  blogLink,
   githubLink,
   linkedinLink,
   projectsIntro,

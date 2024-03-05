@@ -2,16 +2,12 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 
 import { styles } from "../styles";
-import { githubLink, linkedinLink, navLinks } from "../constants";
+import { blogLink, githubLink, linkedinLink, navLinks } from "../constants";
 import { logo, menu, close, github, linkedin } from "../assets";
 
 const Navbar = () => {
   const [active, setActive] = useState("");
   const [toggle, setToggle] = useState(false);
-
-  const handleClick = (link) => {
-    window.open(link, "_blank");
-  };
 
   return (
     <nav
@@ -33,24 +29,14 @@ const Navbar = () => {
             </p>
           </Link>
           <div className="flex items-center gap-2 ml-7">
-            <a
-              href={githubLink}
-              target="_blank"
-              rel="noopener noreferrer"
-              onClick={() => handleClick(githubLink)}
-            >
+            <a href={githubLink} target="_blank" rel="noopener noreferrer">
               <img
                 src={github}
                 alt="github profile"
                 className="w-9 h-9 cursor-pointer"
               />
             </a>
-            <a
-              href={linkedinLink}
-              target="_blank"
-              rel="noopener noreferrer"
-              onClick={() => handleClick(linkedinLink)}
-            >
+            <a href={linkedinLink} target="_blank" rel="noopener noreferrer">
               <img
                 src={linkedin}
                 alt="linkedin profile"
@@ -67,7 +53,7 @@ const Navbar = () => {
                 active === link.title ? "text-white" : "text-secondary"
               } hover:text-white text-[18px] font-medium cursor-pointer`}
               onClick={() => {
-                if (link.id !== "resume") {
+                if (link.id !== "resume" && link.id !== "blog") {
                   setActive(link.title);
                 } else {
                   setActive("");
@@ -79,6 +65,10 @@ const Navbar = () => {
                   href="/resume/Bharath_Resume.pdf"
                   download="Bharath_Resume.pdf"
                 >
+                  {link.title}
+                </a>
+              ) : link.id === "blog" ? (
+                <a href={blogLink} target="_blank" rel="noopener noreferrer">
                   {link.title}
                 </a>
               ) : (
@@ -109,7 +99,7 @@ const Navbar = () => {
                   } hover:text-white font-poppins font-medium cursor-pointer text-[16px]`}
                   onClick={() => {
                     setToggle((toggle) => !toggle);
-                    if (link.id !== "resume") {
+                    if (link.id !== "resume" && link.id !== "blog") {
                       setActive(link.title);
                     } else {
                       setActive("");
@@ -120,6 +110,14 @@ const Navbar = () => {
                     <a
                       href="../assets/resume/Bharath_Resume.pdf"
                       download="Bharath_Resume.pdf"
+                    >
+                      {link.title}
+                    </a>
+                  ) : link.id === "blog" ? (
+                    <a
+                      href={blogLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
                     >
                       {link.title}
                     </a>
