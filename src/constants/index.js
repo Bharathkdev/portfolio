@@ -20,6 +20,7 @@ import {
   moneymanager,
   ecommerce,
   projectManagement,
+  fullstack,
 } from "../assets";
 
 export const navLinks = [
@@ -59,6 +60,10 @@ const services = [
   {
     title: "Backend Developer",
     icon: backend,
+  },
+  {
+    title: "Full stack Developer (MERN)",
+    icon: fullstack,
   },
 ];
 
@@ -153,6 +158,34 @@ const experiences = [
   },
 ];
 
+const achievements = [
+  {
+    achievement:
+      "Successfully implemented feature-rich and bug-free deliveries within sprint deadlines, while fostering collaboration through Tech Tuesday meetups, eliminating any carryovers.",
+    company: "IGT",
+  },
+  {
+    achievement:
+      "Achieved building own CI/CD system with Fastlane, saving the team 6+ hours per day for build generation, beta and store releases.",
+    company: "Rently",
+  },
+  {
+    achievement:
+      "Developed a dynamic Front-end React Native Web app along with Node.js backend for Fastlane, achieving 70% faster APK & IPA generation which led to increase in productivity.",
+    company: "Rently",
+  },
+  {
+    achievement:
+      "Achieved a 100% test case coverage by implementing the Appium framework for automated tests.",
+    company: "Rently",
+  },
+  {
+    achievement:
+      "Achieved moving Jenkins from a local machine to AWS EC2 cloud with Docker, which saved us 4 hours of daily manual work for test automation.",
+    company: "Rently",
+  },
+];
+
 const projects = [
   {
     name: "Money Manager App",
@@ -227,11 +260,18 @@ const projects = [
   },
 ];
 
+const githubLink = "https://github.com/Bharathkdev";
+
+const linkedinLink = "https://www.linkedin.com/in/bharathrna/";
+
 export {
   Introduction,
   services,
   technologies,
   experiences,
+  achievements,
   projects,
+  githubLink,
+  linkedinLink,
   projectsIntro,
 };

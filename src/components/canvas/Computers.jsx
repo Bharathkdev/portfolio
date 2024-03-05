@@ -1,4 +1,4 @@
-import { Suspense, useEffect, useState } from "react";
+import { Suspense, useEffect, useRef, useState } from "react";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
 import CanvasLoader from "../Loader";
@@ -29,7 +29,8 @@ const Computers = ({ isMobile }) => {
 };
 
 const ComputerCanvas = () => {
-  const [isMobile, setIsMobile] = useState(false);
+  const [isMobile, setIsMobile] = useState(true);
+  const controls = useRef();
 
   useEffect(() => {
     // Add a listener for changes to the screen size
@@ -52,6 +53,11 @@ const ComputerCanvas = () => {
     };
   }, []);
 
+  const handleAutoRotateStart = () => {
+    // Stop auto-rotation after the first rotation
+    controls.current.autoRotate = false;
+  };
+
   return (
     <Canvas
       frameloop="demand"
@@ -65,6 +71,10 @@ const ComputerCanvas = () => {
           enableZoom={false}
           maxPolarAngle={Math.PI / 2}
           minPolarAngle={Math.PI / 2}
+          autoRotate={true}
+          autoRotateSpeed={5.0}
+          ref={controls}
+          onStart={handleAutoRotateStart}
         />
         <Computers isMobile={isMobile} />
       </Suspense>
