@@ -19,8 +19,8 @@ import {
   ios,
   moneymanager,
   ecommerce,
-  projectManagement,
   fullstack,
+  smartLock,
 } from "../assets";
 
 export const navLinks = [
@@ -139,7 +139,7 @@ const experiences = [
       "Pioneered in MQTT & Bluetooth Hardware(BLE) integration for accessing 12+ iOT devices (Hubs, Smart Locks, Sensors, etc.) from the application User Interface.",
       "Integrated Beans Map, effectively addressing the user navigation challenge and contributing to a 10% rise in app downloads.",
       "Practical knowledge in code signing, app store reviews & code push.",
-      "Conducted 100+ code reviews, emphasizing clean code through coding best practices.",
+      "Conducted 100+ code reviews, emphasizing high code quality through coding best practices.",
       "Competent in UI/UX design patterns, with a hands on approach for creating visually appealing & user-centric interfaces using Figma, Adobe, Miro & React Native elements library.",
       "Mentored 10+ junior developers to deliver multiple modules in the Smart Home application.",
       "Facilitated Authentication (AWS and Azure SSO) & in-app chat (ADA Chatbot) integrations.",
@@ -153,11 +153,11 @@ const experiences = [
     date: "May 2023 - Present",
     points: [
       "Engaging in the development of complex responsive UI components for lottery gaming application with 2000+ daily active users.",
-      "Experienced in Monorepo setup, actively contributing to 110+ private npm packages.",
-      "Implementing robust automated workflows using GitHub Actions and Dependabot.",
+      "Experienced in Monorepo setup, contributing to 110+ private npm packages, enhancing streamlined development and maximizing code reusability across projects.",
+      "Implementing robust automated workflows with GitHub Actions and Dependabot, saving the team 2+ hours daily and a 25% decrease in outdated dependencies.",
       "Played a pivotal role in achieving a smooth React Native upgrade.",
       "Significant contributor to the development of the Biometric Authentication module.",
-      "Implementing push notifications through Firebase Cloud Messaging & Xtremepush platforms.",
+      "Implemented push notifications through Xtremepush platforms, enhancing communication channels and contributing to organizational satisfaction.",
     ],
   },
 ];
@@ -165,7 +165,7 @@ const experiences = [
 const achievements = [
   {
     achievement:
-      "Successfully implemented feature-rich and bug-free deliveries within sprint deadlines, while fostering collaboration through Tech Tuesday meetups, eliminating any carryovers.",
+      "Initiated Tech Tuesday meetups and avoided multiple production issues by discussing, documenting and implementing best solutions collaboratively.",
     company: "IGT",
   },
   {
@@ -238,29 +238,29 @@ const projects = [
     source_code_link: "https://github.com/Bharathkdev/RNShop",
   },
   {
-    name: "Project Management",
+    name: "Smart Lock App",
     description:
-      "Effortlessly navigate project management and define clear goals using this cutting-edge React web application. Featuring a sleek and polished interface powered by Tailwind CSS, it streamlines the process of creating projects and articulating well-defined goals.",
+      "Android application that seamlessly integrates with IoT (Internet of Things) technology, enabling users to effortlessly connect with a smart lock through a user-friendly UI. This app empowers users to generate and manage smart lock codes, facilitating secure and convenient locking and unlocking operations via Bluetooth communication within the Android application. Experience the ease of controlling and managing access to your smart lock using state-of-the-art technology right at your fingertips.",
     tags: [
       {
-        name: "reactjs",
+        name: "android",
         color: "blue-text-gradient",
       },
       {
-        name: "html",
+        name: "java",
         color: "green-text-gradient",
       },
       {
-        name: "tailwindcss",
+        name: "IoT(smart-home)",
         color: "pink-text-gradient",
       },
       {
-        name: "vite",
+        name: "smart-locks",
         color: "orange-text-gradient",
       },
     ],
-    image: projectManagement,
-    source_code_link: "https://github.com/Bharathkdev/react-project-management",
+    image: smartLock,
+    source_code_link: "https://github.com/Bharathkdev/SmartLockApp",
   },
 ];
 

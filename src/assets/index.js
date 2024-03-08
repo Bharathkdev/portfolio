@@ -36,7 +36,7 @@ import rently from "./company/rently.png";
 
 import moneymanager from "./moneymanager.jpeg";
 import ecommerce from "./e-commerce.jpg";
-import projectManagement from "./projectManagement.png";
+import smartLock from "./smartLock.png";
 
 export {
   logo,
@@ -74,5 +74,5 @@ export {
   rently,
   moneymanager,
   ecommerce,
-  projectManagement,
+  smartLock,
 };
