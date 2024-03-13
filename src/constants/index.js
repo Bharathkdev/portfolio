@@ -154,7 +154,7 @@ const experiences = [
     points: [
       "Engaging in the development of complex responsive UI components for lottery gaming application with 2000+ daily active users.",
       "Experienced in Monorepo setup, contributing to 110+ private npm packages, enhancing streamlined development and maximizing code reusability across projects.",
-      "Implementing robust automated workflows with GitHub Actions and Dependabot, saving the team 2+ hours daily and a 25% decrease in outdated dependencies.",
+      "Implementing robust automated workflows with GitHub Actions and Dependabot, saving the team 2+ hours daily & efficiently managing the outdated dependencies.",
       "Played a pivotal role in achieving a smooth React Native upgrade.",
       "Significant contributor to the development of the Biometric Authentication module.",
       "Implemented push notifications through Xtremepush platforms, enhancing communication channels and contributing to organizational satisfaction.",
@@ -165,7 +165,7 @@ const experiences = [
 const achievements = [
   {
     achievement:
-      "Initiated Tech Tuesday meetups and avoided multiple production issues by discussing, documenting and implementing best solutions collaboratively.",
+      "Initiated Tech Tuesday meetups and eliminated multiple production issues by discussing, documenting and implementing best solutions collaboratively.",
     company: "IGT",
   },
   {
@@ -175,7 +175,7 @@ const achievements = [
   },
   {
     achievement:
-      "Developed a dynamic Front-end React Native Web app along with Node.js backend for Fastlane, achieving 70% faster APK & IPA generation which led to increase in productivity.",
+      "Developed a dynamic Front-end React app along with Node.js backend for Fastlane, achieving 70% faster APK & IPA generation which led to increase in productivity.",
     company: "Rently",
   },
   {
