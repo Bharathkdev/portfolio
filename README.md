@@ -2,6 +2,8 @@
   <h3 align="center">React 3D Portfolio</h3>
 </div>
 
+![alt text](src/assets/Portfolio.png)
+
 ## 📋 <a name="table">Table of Contents</a>
 
 1. 🤖 [Introduction](#introduction)
