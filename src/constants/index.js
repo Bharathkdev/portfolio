@@ -240,7 +240,7 @@ const projects = [
   {
     name: "Event Platform",
     description:
-      "Built on Next.js 14, the events application stands as a comprehensive, full-stack platform with MongoDB backed database for managing events. It serves as a hub, spotlighting diverse events taking place globally. Featuring seamless payment processing through Stripe, you have the capability to purchase tickets for any event or even initiate and manage your own events.",
+      "Built on Next.js 14, the events application stands as a comprehensive, full-stack platform with MongoDB backed database for managing events. With a fully responsive user interface, it serves as a hub, spotlighting diverse events taking place globally. Featuring seamless payment processing through Stripe, you have the capability to purchase tickets for any event or even initiate and manage your own events.",
     tags: [
       {
         name: "nextjs",
