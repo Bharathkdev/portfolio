@@ -20,7 +20,7 @@ import {
   moneymanager,
   ecommerce,
   fullstack,
-  smartLock,
+  evently,
 } from "../assets";
 
 export const navLinks = [
@@ -238,29 +238,29 @@ const projects = [
     source_code_link: "https://github.com/Bharathkdev/RNShop",
   },
   {
-    name: "Smart Lock App",
+    name: "Event Platform",
     description:
-      "Android application that seamlessly integrates with IoT (Internet of Things) technology, enabling users to effortlessly connect with a smart lock through a user-friendly UI. This app empowers users to generate and manage smart lock codes, facilitating secure and convenient locking and unlocking operations via Bluetooth communication within the Android application. Experience the ease of controlling and managing access to your smart lock using state-of-the-art technology right at your fingertips.",
+      "Built on Next.js 14, the events application stands as a comprehensive, full-stack platform with MongoDB backed database for managing events. It serves as a hub, spotlighting diverse events taking place globally. Featuring seamless payment processing through Stripe, you have the capability to purchase tickets for any event or even initiate and manage your own events.",
     tags: [
       {
-        name: "android",
+        name: "nextjs",
         color: "blue-text-gradient",
       },
       {
-        name: "java",
+        name: "typescript",
         color: "green-text-gradient",
       },
       {
-        name: "IoT(smart-home)",
+        name: "mongodb",
         color: "pink-text-gradient",
       },
       {
-        name: "smart-locks",
+        name: "tailwindCSS",
         color: "orange-text-gradient",
       },
     ],
-    image: smartLock,
-    source_code_link: "https://github.com/Bharathkdev/SmartLockApp",
+    image: evently,
+    source_code_link: "https://github.com/Bharathkdev/event_platform",
   },
 ];
 
