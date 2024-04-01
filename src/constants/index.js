@@ -134,7 +134,7 @@ const experiences = [
     iconBg: "#383E56",
     date: "June 2019 - May 2023",
     points: [
-      "Led the development of a Smart home Application with 5000+ daily active users working on IoT, VWO (A/B testing), Payment gateway, Maps, Heap, Sentry, App Center & Firebase.",
+      "Led the development of a Smart home Application with 5000+ daily active users working on IoT, VWO (A/B testing), MQTT, Bluetooth, Payment gateway, Maps, Heap, Sentry, App Center & Firebase.",
       "Spearheading the development and maintenance of 3 diverse applications, while adeptly handling 10 white-labeled applications.",
       "Pioneered in MQTT & Bluetooth Hardware(BLE) integration for accessing 12+ iOT devices (Hubs, Smart Locks, Sensors, etc.) from the application User Interface.",
       "Integrated Beans Map, effectively addressing the user navigation challenge and contributing to a 10% rise in app downloads.",
@@ -156,8 +156,9 @@ const experiences = [
       "Experienced in Monorepo setup, contributing to 110+ private npm packages, enhancing streamlined development and maximizing code reusability across projects.",
       "Implementing robust automated workflows with GitHub Actions and Dependabot, saving the team 2+ hours daily & efficiently managing the outdated dependencies.",
       "Played a pivotal role in achieving a smooth React Native upgrade.",
-      "Significant contributor to the development of the Biometric Authentication module.",
-      "Implemented push notifications through Xtremepush platforms, enhancing communication channels and contributing to organizational satisfaction.",
+      "Significant contributor to the development of the native Biometric Authentication module.",
+      "Leveraging native APIs & SDKs for both Android & iOS integration (Objective-C/ Java).",
+      "Integrating the customer engagement platform Xtremepush, resulting in enhanced customer engagement, boosting company revenues.",
     ],
   },
 ];
@@ -187,6 +188,26 @@ const achievements = [
     achievement:
       "Achieved moving Jenkins from a local machine to AWS EC2 cloud with Docker, which saved us 4 hours of daily manual work for test automation.",
     company: "Rently",
+  },
+  {
+    achievement:
+      "Optimized app performance & user experience by 25% by integrating Firebase Performance Monitoring & shopify react-native-performance libraries & iterated based on metrics insights.",
+    company: "Rently",
+  },
+  {
+    achievement:
+      "Integrated payment gateways (Authorize.net & Stripe), conducted A/B testing for subscription plans, resulting in a 7% increase in company revenue.",
+    company: "Rently",
+  },
+  {
+    achievement:
+      "Proficient in end-to-end testing and efficiently addressed 200+ bugs, resulting in increased app ratings to 4.7 on Android and 4.8 on iOS.",
+    company: "Rently & IGT",
+  },
+  {
+    achievement:
+      "Building & releasing 10+ React native mobile applications in both iOS App Store & Google Play Store with automated releases(Fastlane).",
+    company: "Rently & IGT",
   },
 ];
 
