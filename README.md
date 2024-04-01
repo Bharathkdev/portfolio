@@ -1,5 +1,5 @@
 <div align="center">
-  <h3 align="center">React 3D Portfolio</h3>
+   <a href="https://bharath-devportfolio.netlify.app/" align="center" target="_blank" rel="noreferrer">React 3D Portfolio</a>
 </div>
 
 ![alt text](src/assets/Portfolio.png)
