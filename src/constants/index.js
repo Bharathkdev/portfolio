@@ -191,7 +191,7 @@ const achievements = [
   },
   {
     achievement:
-      "Optimized app performance & user experience by 25% by integrating Firebase Performance Monitoring & shopify react-native-performance libraries & iterated based on metrics insights.",
+      "Optimized app performance & user experience by 25% by integrating Firebase Performance Monitoring & shopify react-native-performance libraries.",
     company: "Rently",
   },
   {
@@ -201,12 +201,12 @@ const achievements = [
   },
   {
     achievement:
-      "Proficient in end-to-end testing and efficiently addressed 200+ bugs, resulting in increased app ratings to 4.7 on Android and 4.8 on iOS.",
+      "Efficiently addressed 200+ bugs, resulting in increased app ratings to 4.7 on Android and 4.8 on iOS.",
     company: "Rently & IGT",
   },
   {
     achievement:
-      "Building & releasing 10+ React native mobile applications in both iOS App Store & Google Play Store with automated releases(Fastlane).",
+      "Released 10+ React native mobile applications in both iOS App Store & Google Play Store with automated releases(Fastlane).",
     company: "Rently & IGT",
   },
 ];
