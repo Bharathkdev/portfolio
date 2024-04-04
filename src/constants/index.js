@@ -47,7 +47,7 @@ export const navLinks = [
 ];
 
 const Introduction =
-  "I'm a Software Engineer with more than 4.5 years of experience in developing robust Mobile and Web applications using frameworks like React Native, React, Node.js for enterprise-level applications and recognized for ensuring excellence and uniformity across every stage of software development initiatives.";
+  "I'm a Software Engineer with around 5 years of experience in developing robust Mobile and Web applications using frameworks like React Native, React, Node.js for enterprise-level applications and recognized for ensuring excellence and uniformity across every stage of software development initiatives.";
 
 const projectsIntro =
   "Following projects showcases my skills and experience through real-world examples of my work. Each project is briefly described with links to code repositories. It reflects my ability to solve complex problems, work with different technologies, and manage projects effectively.";
