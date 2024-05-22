@@ -31,12 +31,16 @@ import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
 
+import previous from "./previous.png";
+import next from "./next.png";
+
 import igt from "./company/igt.jpeg";
 import rently from "./company/rently.png";
 
 import moneymanager from "./moneymanager.jpeg";
 import ecommerce from "./e-commerce.jpg";
 import evently from "./evently.png";
+import aora from './aora.png';
 
 export {
   logo,
@@ -44,11 +48,14 @@ export {
   fullstack,
   mobile,
   web,
+  aora,
   github,
   linkedin,
   menu,
   close,
   css,
+  previous,
+  next,
   java,
   expressjs,
   mongoose,

@@ -1,8 +1,9 @@
+import { useRef, useState } from "react";
 import { Tilt } from "react-tilt";
 import { motion } from "framer-motion";
 
 import { styles } from "../styles";
-import { github } from "../assets";
+import { github, previous, next } from "../assets";
 import { SectionWrapper } from "../hoc";
 import { projects, projectsIntro } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
@@ -63,6 +64,26 @@ const ProjectCard = ({
 };
 
 const Works = () => {
+  const scrollRef = useRef(null);
+  const [canScrollLeft, setCanScrollLeft] = useState(false);
+  const [canScrollRight, setCanScrollRight] = useState(true);
+
+  const checkForScrollPosition = () => {
+    if (scrollRef.current) {
+      const { scrollLeft, scrollWidth, clientWidth } = scrollRef.current;
+      setCanScrollLeft(scrollLeft > 0);
+      setCanScrollRight(scrollLeft < scrollWidth - clientWidth - 20);
+    }
+  };
+
+  const handleScroll = (direction) => {
+    if (scrollRef.current) {
+      const { clientWidth } = scrollRef.current;
+      const scrollAmount = direction === "left" ? -clientWidth : clientWidth;
+      scrollRef.current.scrollBy({ left: scrollAmount, behavior: "smooth" });
+    }
+  };
+
   return (
     <>
       <motion.div variants={textVariant()}>
@@ -79,10 +100,33 @@ const Works = () => {
         </motion.p>
       </div>
 
-      <div className="mt-20 flex flex-wrap gap-7">
-        {projects.map((project, index) => (
-          <ProjectCard key={`project-${index}`} index={index} {...project} />
-        ))}
+      <div className="relative mt-20">
+        {canScrollLeft && (
+          <button
+            className="absolute left-0 z-10 p-2 bg-white-100 rounded-full transform -translate-y-1/2 top-1/2"
+            onClick={() => handleScroll("left")}
+          >
+            <img src={previous} alt="previous" className="w-10 h-10" />
+          </button>
+        )}
+        <div
+          ref={scrollRef}
+          onScroll={checkForScrollPosition}
+          className="flex gap-7 overflow-x-auto"
+          style={{ scrollBehavior: "smooth" }}
+        >
+          {projects.map((project, index) => (
+            <ProjectCard key={`project-${index}`} index={index} {...project} />
+          ))}
+        </div>
+        {canScrollRight && (
+          <button
+            className="absolute right-0 z-10 p-2 bg-white-100 rounded-full transform -translate-y-1/2 top-1/2"
+            onClick={() => handleScroll("right")}
+          >
+            <img src={next} alt="next" className="w-10 h-10" />
+          </button>
+        )}
       </div>
     </>
   );

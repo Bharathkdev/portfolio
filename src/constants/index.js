@@ -21,6 +21,7 @@ import {
   ecommerce,
   fullstack,
   evently,
+  aora,
 } from "../assets";
 
 export const navLinks = [
@@ -238,25 +239,33 @@ const projects = [
     source_code_link: "https://github.com/Bharathkdev/expenseTrackerApp",
   },
   {
-    name: "E-Commerce App",
+    name: "Expo Full-Stack Video Sharing App",
     description:
-      "Explore the React Native E-Commerce App for a seamless shopping experience. Captivating UI, intricate product cards, and an immersive Product Details feature for a truly enchanting experience. Effortlessly find products with the robust Search Functionality. Prioritizes clean code practices with TypeScript Integration for enhanced readability and maintainability. Enjoy a visually appealing design for effortless product exploration and purchase.",
+      "Aora is a comprehensive React Native Expo app for video streaming and sharing. It features seamless video playback, robust authentication, dynamic home screens with animations, full-text search, and user-friendly interfaces. Users can upload, favorite, and search for videos, while enjoying smooth navigation and responsive design across devices. Built with technologies like Appwrite for backend services and Nativewind for styling, Aora offers a modern and engaging experience for video enthusiasts.",
     tags: [
       {
         name: "react-native",
         color: "blue-text-gradient",
       },
       {
+        name: "expo",
+        color: "violet-text-gradient",
+      },
+      {
         name: "typescript",
         color: "green-text-gradient",
       },
       {
-        name: "redux-toolkit",
+        name: "appwrite",
         color: "pink-text-gradient",
       },
+      {
+        name: "native-wind",
+        color: "orange-text-gradient",
+      },
     ],
-    image: ecommerce,
-    source_code_link: "https://github.com/Bharathkdev/RNShop",
+    image: aora,
+    source_code_link: "https://github.com/Bharathkdev/full_stack_expo_app",
   },
   {
     name: "Event Platform",
@@ -282,6 +291,27 @@ const projects = [
     ],
     image: evently,
     source_code_link: "https://github.com/Bharathkdev/event_platform",
+  },
+  {
+    name: "E-Commerce App",
+    description:
+      "Explore the React Native E-Commerce App for a seamless shopping experience. Captivating UI, intricate product cards, and an immersive Product Details feature for a truly enchanting experience. Effortlessly find products with the robust Search Functionality. Prioritizes clean code practices with TypeScript Integration for enhanced readability and maintainability. Enjoy a visually appealing design for effortless product exploration and purchase.",
+    tags: [
+      {
+        name: "react-native",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "typescript",
+        color: "green-text-gradient",
+      },
+      {
+        name: "redux-toolkit",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: ecommerce,
+    source_code_link: "https://github.com/Bharathkdev/RNShop",
   },
 ];
 
