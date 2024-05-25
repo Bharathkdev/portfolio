@@ -3,7 +3,7 @@ import { Tilt } from "react-tilt";
 import { motion } from "framer-motion";
 
 import { styles } from "../styles";
-import { github, previous, next } from "../assets";
+import { github, linkedin, previous, next } from "../assets";
 import { SectionWrapper } from "../hoc";
 import { projects, projectsIntro } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
@@ -14,7 +14,8 @@ const ProjectCard = ({
   description,
   tags,
   image,
-  source_code_link,
+  sourceCode,
+  linkedinPost,
 }) => {
   return (
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
@@ -27,22 +28,14 @@ const ProjectCard = ({
         className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full"
       >
         <div className="relative w-full h-[230px]">
-          <img
-            src={image}
-            alt={name}
-            className="w-full h-full object-contain rounded-2xl bg-slate-950"
-          />
-          <div className="absolute inset-0 flex-end m-3 card-img_hover">
-            <div
-              onClick={() => window.open(source_code_link, "_blank")}
-              className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
-            >
-              <img
-                src={github}
-                alt="github"
-                className="w-1/2 h-1/2 object-contain"
-              />
+          <img src={image} alt={name} className="w-full h-full object-contain rounded-2xl bg-slate-950" />
+          <div className="absolute inset-0 flex-end m-3 card-img_hover flex">
+            <div onClick={() => window.open(sourceCode, "_blank")} className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer mr-2">
+              <img src={github} alt="github" className="w-8/12 h-8/12 object-contain" />
             </div>
+            {linkedinPost && <div onClick={() => window.open(linkedinPost, "_blank")} className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer">
+              <img src={linkedin} alt="linkedin" className="w-10/12 h-10/12 object-contain" />
+            </div>}
           </div>
         </div>
 

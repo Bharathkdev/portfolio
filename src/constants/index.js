@@ -236,7 +236,8 @@ const projects = [
       },
     ],
     image: moneymanager,
-    source_code_link: "https://github.com/Bharathkdev/expenseTrackerApp",
+    sourceCode: "https://github.com/Bharathkdev/expenseTrackerApp",
+    linkedinPost: "https://www.linkedin.com/posts/bharathrna_reactnative-javascript-firebase-activity-7118224386054135808-VeKD?utm_source=share&utm_medium=member_desktop",
   },
   {
     name: "Expo Full-Stack Video Sharing App",
@@ -265,13 +266,18 @@ const projects = [
       },
     ],
     image: aora,
-    source_code_link: "https://github.com/Bharathkdev/full_stack_expo_app",
+    sourceCode: "https://github.com/Bharathkdev/full_stack_expo_app",
+    linkedinPost: "https://www.linkedin.com/posts/bharathrna_a-full-stack-react-native-video-streaming-activity-7199439106756468736-ZXqI?utm_source=share&utm_medium=member_desktop",
   },
   {
     name: "Event Platform",
     description:
       "Built on Next.js 14, the events application stands as a comprehensive, full-stack platform with MongoDB backed database for managing events. With a fully responsive user interface, it serves as a hub, spotlighting diverse events taking place globally. Featuring seamless payment processing through Stripe, you have the capability to purchase tickets for any event or even initiate and manage your own events.",
     tags: [
+      {
+        name: "reactjs",
+        color: "violet-text-gradient",
+      },
       {
         name: "nextjs",
         color: "blue-text-gradient",
@@ -290,7 +296,8 @@ const projects = [
       },
     ],
     image: evently,
-    source_code_link: "https://github.com/Bharathkdev/event_platform",
+    sourceCode: "https://github.com/Bharathkdev/event_platform",
+    linkedinPost: "https://www.linkedin.com/posts/bharathrna_reactjs-nextjs-mongodb-activity-7178368379722821632-ESkr?utm_source=share&utm_medium=member_desktop",
   },
   {
     name: "E-Commerce App",
@@ -311,7 +318,8 @@ const projects = [
       },
     ],
     image: ecommerce,
-    source_code_link: "https://github.com/Bharathkdev/RNShop",
+    sourceCode: "https://github.com/Bharathkdev/RNShop",
+    linkedinPost: "",
   },
 ];
 
