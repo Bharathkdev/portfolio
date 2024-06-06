@@ -129,19 +129,19 @@ const technologies = [
 
 const experiences = [
   {
-    title: "Senior React Native Developer",
+    title: "Senior Software Developer",
     company_name: "Rently",
     icon: rently,
     iconBg: "#383E56",
     date: "June 2019 - May 2023",
     points: [
-      "Led the development of a Smart home Application with 5000+ daily active users working on IoT, VWO (A/B testing), MQTT, Bluetooth, Payment gateway, Maps, Heap, Sentry, App Center & Firebase.",
+      "Led the development of a Web & Mobile Smart home Rental Application with 5000+ daily active users working on IoT, VWO (A/B testing), MQTT, Bluetooth, Payment gateway, Maps, Heap, Sentry, App Center & Firebase.",
       "Spearheading the development and maintenance of 3 diverse applications, while adeptly handling 10 white-labeled applications.",
       "Pioneered in MQTT & Bluetooth Hardware(BLE) integration for accessing 12+ iOT devices (Hubs, Smart Locks, Sensors, etc.) from the application User Interface.",
       "Integrated Beans Map, effectively addressing the user navigation challenge and contributing to a 10% rise in app downloads.",
       "Practical knowledge in code signing, app store reviews & code push.",
       "Conducted 100+ code reviews, emphasizing high code quality through coding best practices.",
-      "Competent in UI/UX design patterns, with a hands on approach for creating visually appealing & user-centric interfaces using Figma, Adobe, Miro & React Native elements library.",
+      "Competent in UI/UX design patterns, with a hands on approach for creating visually appealing & user-centric interfaces using Figma, Adobe, Miro, Material UI & React Native elements library.",
       "Mentored 10+ junior developers to deliver multiple modules in the Smart Home application.",
       "Facilitated Authentication (AWS and Azure SSO) & in-app chat (ADA Chatbot) integrations.",
     ],
@@ -153,9 +153,11 @@ const experiences = [
     iconBg: "#E6DEDD",
     date: "May 2023 - Present",
     points: [
-      "Engaging in the development of complex responsive UI components for lottery gaming application with 2000+ daily active users.",
+      "Leading the development of React and React Native complex responsive UI components for lottery gaming application with 2000+ daily active users.",
       "Experienced in Monorepo setup, contributing to 110+ private npm packages, enhancing streamlined development and maximizing code reusability across projects.",
       "Implementing robust automated workflows with GitHub Actions and Dependabot, saving the team 2+ hours daily & efficiently managing the outdated dependencies.",
+      "Implemented a validation React hook and reduced micro-frontend code by 40%.",
+      "Improved API request performance by 73% for 20,000+ items using Promises in JavaScript Browser API.",
       "Played a pivotal role in achieving a smooth React Native upgrade.",
       "Significant contributor to the development of the native Biometric Authentication module.",
       "Leveraging native APIs & SDKs for both Android & iOS integration (Objective-C/ Java).",
@@ -172,12 +174,17 @@ const achievements = [
   },
   {
     achievement:
+      "Developed a TypeScript algorithm, ”generateTailwindClasses,” to reduce code by over 95% in files using Tailwind CSS.",
+    company: "IGT",
+  },
+  {
+    achievement:
       "Achieved building own CI/CD system with Fastlane, saving the team 6+ hours per day for build generation, beta and store releases.",
     company: "Rently",
   },
   {
     achievement:
-      "Developed a dynamic Front-end React app along with Node.js backend for Fastlane, achieving 70% faster APK & IPA generation which led to increase in productivity.",
+      "Developed a dynamic Full stack React app along with Node.js backend for Fastlane, achieving 70% faster APK & IPA generation which led to increase in productivity.",
     company: "Rently",
   },
   {
@@ -192,7 +199,12 @@ const achievements = [
   },
   {
     achievement:
-      "Optimized app performance & user experience by 25% by integrating Firebase Performance Monitoring & shopify react-native-performance libraries.",
+      "Reduced 5 hours of manual deployment process to 2 mins by integrating chatbot along with Dialog flow Conversation AI & Node JS.",
+    company: "Rently",
+  },
+  {
+    achievement:
+      "Optimized app performance & user experience by 25% by integrating Firebase Performance Monitoring & shopify performance libraries.",
     company: "Rently",
   },
   {
@@ -213,6 +225,36 @@ const achievements = [
 ];
 
 const projects = [
+  {
+    name: "Event Platform",
+    description:
+      "Built on Next.js 14, the events application stands as a comprehensive, full-stack platform with MongoDB backed database for managing events. With a fully responsive user interface, it serves as a hub, spotlighting diverse events taking place globally. Featuring seamless payment processing through Stripe, you have the capability to purchase tickets for any event or even initiate and manage your own events.",
+    tags: [
+      {
+        name: "reactjs",
+        color: "violet-text-gradient",
+      },
+      {
+        name: "nextjs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "typescript",
+        color: "green-text-gradient",
+      },
+      {
+        name: "mongodb",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "tailwindCSS",
+        color: "orange-text-gradient",
+      },
+    ],
+    image: evently,
+    sourceCode: "https://github.com/Bharathkdev/event_platform",
+    linkedinPost: "https://www.linkedin.com/posts/bharathrna_reactjs-nextjs-mongodb-activity-7178368379722821632-ESkr?utm_source=share&utm_medium=member_desktop",
+  },
   {
     name: "Money Manager App",
     description:
@@ -268,36 +310,6 @@ const projects = [
     image: aora,
     sourceCode: "https://github.com/Bharathkdev/full_stack_expo_app",
     linkedinPost: "https://www.linkedin.com/posts/bharathrna_a-full-stack-react-native-video-streaming-activity-7199439106756468736-ZXqI?utm_source=share&utm_medium=member_desktop",
-  },
-  {
-    name: "Event Platform",
-    description:
-      "Built on Next.js 14, the events application stands as a comprehensive, full-stack platform with MongoDB backed database for managing events. With a fully responsive user interface, it serves as a hub, spotlighting diverse events taking place globally. Featuring seamless payment processing through Stripe, you have the capability to purchase tickets for any event or even initiate and manage your own events.",
-    tags: [
-      {
-        name: "reactjs",
-        color: "violet-text-gradient",
-      },
-      {
-        name: "nextjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "typescript",
-        color: "green-text-gradient",
-      },
-      {
-        name: "mongodb",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "tailwindCSS",
-        color: "orange-text-gradient",
-      },
-    ],
-    image: evently,
-    sourceCode: "https://github.com/Bharathkdev/event_platform",
-    linkedinPost: "https://www.linkedin.com/posts/bharathrna_reactjs-nextjs-mongodb-activity-7178368379722821632-ESkr?utm_source=share&utm_medium=member_desktop",
   },
   {
     name: "E-Commerce App",
