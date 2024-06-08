@@ -40,6 +40,7 @@ import rently from "./company/rently.png";
 import moneymanager from "./moneymanager.jpeg";
 import ecommerce from "./e-commerce.jpg";
 import evently from "./evently.png";
+import Portfolio from "./Portfolio.png";
 import aora from './aora.png';
 
 export {
@@ -82,4 +83,5 @@ export {
   moneymanager,
   ecommerce,
   evently,
+  Portfolio
 };

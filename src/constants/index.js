@@ -22,6 +22,7 @@ import {
   fullstack,
   evently,
   aora,
+  Portfolio,
 } from "../assets";
 
 export const navLinks = [
@@ -213,6 +214,36 @@ const achievements = [
 ];
 
 const projects = [
+  {
+    name: "3D Portflio",
+    description:
+      "Discover my interactive 3D portfolio crafted in React, Three.js, React Three Fiber, React Three Drei, Tailwind CSS, and Framer Motion. Experience a unique three-dimensional perspective, responsive design with Tailwind CSS, and captivating animations powered by Framer Motion. Stay connected effortlessly with integrated email functionality.",
+    tags: [
+      {
+        name: "reactjs",
+        color: "violet-text-gradient",
+      },
+      {
+        name: "threejs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "react-three-fiber",
+        color: "green-text-gradient",
+      },
+      {
+        name: "react-three-drei",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "framer-motion",
+        color: "orange-text-gradient",
+      },
+    ],
+    image: Portfolio,
+    sourceCode: "https://github.com/Bharathkdev/portfolio",
+    linkedinPost: "https://www.linkedin.com/posts/bharathrna_reactjs-threejs-tailwindcss-activity-7179008939152273408-fBbD?utm_source=share&utm_medium=member_desktop",
+  },
   {
     name: "Event Platform",
     description:
