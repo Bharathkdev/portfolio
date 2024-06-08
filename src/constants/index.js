@@ -48,7 +48,7 @@ export const navLinks = [
 ];
 
 const Introduction =
-  "I'm a Software Engineer with around 5 years of experience in developing robust Mobile and Web applications using frameworks like React Native, React, Node.js for enterprise-level applications and recognized for ensuring excellence and uniformity across every stage of software development initiatives.";
+  "I'm a Software Engineer with 5 years of experience in developing robust full-stack Mobile and Web applications using frameworks such as React Native, React.js, Next.js and Node.js. I specialize in crafting complex applications and am known for ensuring excellence and uniformity across every stage of software development initiatives.";
 
 const projectsIntro =
   "Following projects showcases my skills and experience through real-world examples of my work. Each project is briefly described with links to code repositories. It reflects my ability to solve complex problems, work with different technologies, and manage projects effectively.";
@@ -135,7 +135,7 @@ const experiences = [
     iconBg: "#383E56",
     date: "June 2019 - May 2023",
     points: [
-      "Led the development of a Web & Mobile Smart home Rental Application with 5000+ daily active users working on IoT, VWO (A/B testing), MQTT, Bluetooth, Payment gateway, Maps, Heap, Sentry, App Center & Firebase.",
+      "Led the development of a web & mobile Smart home Rental Application with 5000+ daily active users working on IoT, VWO (A/B testing), MQTT, Bluetooth, Payment gateway, Maps, Heap, Sentry, App Center & Firebase.",
       "Spearheading the development and maintenance of 3 diverse applications, while adeptly handling 10 white-labeled applications.",
       "Pioneered in MQTT & Bluetooth Hardware(BLE) integration for accessing 12+ iOT devices (Hubs, Smart Locks, Sensors, etc.) from the application User Interface.",
       "Integrated Beans Map, effectively addressing the user navigation challenge and contributing to a 10% rise in app downloads.",
@@ -153,11 +153,9 @@ const experiences = [
     iconBg: "#E6DEDD",
     date: "May 2023 - Present",
     points: [
-      "Leading the development of React and React Native complex responsive UI components for lottery gaming application with 2000+ daily active users.",
+      "Leading the development of complex, responsive UI components using React and React Native for a lottery gaming application, which serves over 2,000 daily active users.",
       "Experienced in Monorepo setup, contributing to 110+ private npm packages, enhancing streamlined development and maximizing code reusability across projects.",
       "Implementing robust automated workflows with GitHub Actions and Dependabot, saving the team 2+ hours daily & efficiently managing the outdated dependencies.",
-      "Implemented a validation React hook and reduced micro-frontend code by 40%.",
-      "Improved API request performance by 73% for 20,000+ items using Promises in JavaScript Browser API.",
       "Played a pivotal role in achieving a smooth React Native upgrade.",
       "Significant contributor to the development of the native Biometric Authentication module.",
       "Leveraging native APIs & SDKs for both Android & iOS integration (Objective-C/ Java).",
@@ -170,11 +168,6 @@ const achievements = [
   {
     achievement:
       "Initiated Tech Tuesday meetups and eliminated multiple production issues by discussing, documenting and implementing best solutions collaboratively.",
-    company: "IGT",
-  },
-  {
-    achievement:
-      "Developed a TypeScript algorithm, ”generateTailwindClasses,” to reduce code by over 95% in files using Tailwind CSS.",
     company: "IGT",
   },
   {
@@ -199,11 +192,6 @@ const achievements = [
   },
   {
     achievement:
-      "Reduced 5 hours of manual deployment process to 2 mins by integrating chatbot along with Dialog flow Conversation AI & Node JS.",
-    company: "Rently",
-  },
-  {
-    achievement:
       "Optimized app performance & user experience by 25% by integrating Firebase Performance Monitoring & shopify performance libraries.",
     company: "Rently",
   },
@@ -219,7 +207,7 @@ const achievements = [
   },
   {
     achievement:
-      "Released 10+ React native mobile applications in both iOS App Store & Google Play Store with automated releases(Fastlane).",
+      "Released 10+ React & React native applications in production environments successfully with automated releases(Fastlane).",
     company: "Rently & IGT",
   },
 ];
