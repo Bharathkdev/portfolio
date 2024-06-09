@@ -285,6 +285,10 @@ const projects = [
         color: "blue-text-gradient",
       },
       {
+        name: "javascript",
+        color: "violet-text-gradient",
+      },
+      {
         name: "redux",
         color: "green-text-gradient",
       },
@@ -345,12 +349,12 @@ const projects = [
         color: "green-text-gradient",
       },
       {
-        name: "performance-optimisation",
-        color: "pink-text-gradient",
+        name: "typescript",
+        color: "orange-text-gradient",
       },
       {
-        name: "context-api",
-        color: "orange-text-gradient",
+        name: "performance-optimisation",
+        color: "pink-text-gradient",
       },
       {
         name: "layout-calculations",
