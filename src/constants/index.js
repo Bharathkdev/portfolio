@@ -23,6 +23,7 @@ import {
   evently,
   aora,
   Portfolio,
+  customKeyboard,
 } from "../assets";
 
 export const navLinks = [
@@ -329,6 +330,36 @@ const projects = [
     image: aora,
     sourceCode: "https://github.com/Bharathkdev/full_stack_expo_app",
     linkedinPost: "https://www.linkedin.com/posts/bharathrna_a-full-stack-react-native-video-streaming-activity-7199439106756468736-ZXqI?utm_source=share&utm_medium=member_desktop",
+  },
+  {
+    name: "Custom Keyboard App",
+    description:
+      "I challenged myself to design a high-performance single-screen app with impressive visuals, creating a custom keyboard for seamless text manipulation and complex cursor positioning. I incorporated animations, a dynamic glowing border, stylish fonts, emojis, and images. Optimizing performance involved advanced calculations and memoization techniques, ensuring smooth functionality even with over 1000 characters.",
+    tags: [
+      {
+        name: "react-native",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "react-native-animated",
+        color: "green-text-gradient",
+      },
+      {
+        name: "performance-optimisation",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "context-api",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "layout-calculations",
+        color: "violet-text-gradient",
+      },
+    ],
+    image: customKeyboard,
+    sourceCode: "https://github.com/Bharathkdev/custom_keyboard",
+    linkedinPost: "https://www.linkedin.com/posts/bharathrna_hello-all-i-recently-challenged-myself-activity-7205568376868401152-tHcu?utm_source=share&utm_medium=member_desktop",
   },
   {
     name: "E-Commerce App",

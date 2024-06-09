@@ -42,6 +42,7 @@ import ecommerce from "./e-commerce.jpg";
 import evently from "./evently.png";
 import Portfolio from "./Portfolio.png";
 import aora from './aora.png';
+import customKeyboard from './customKeyboard.png';
 
 export {
   logo,
@@ -83,5 +84,6 @@ export {
   moneymanager,
   ecommerce,
   evently,
-  Portfolio
+  Portfolio,
+  customKeyboard
 };
