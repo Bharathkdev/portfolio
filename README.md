@@ -18,6 +18,7 @@ Discover my interactive 3D portfolio crafted in React, Three.js, React Three Fib
 
 - React.js
 - Three.js
+- Javascript
 - TailwindCSS
 - Framer Motion
 - Emailjs
