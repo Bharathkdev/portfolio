@@ -179,7 +179,7 @@ const achievements = [
   },
   {
     achievement:
-      "Developed a dynamic Full stack React app along with Node.js backend for Fastlane, achieving 70% faster APK & IPA generation which led to increase in productivity.",
+      "Developed a dynamic Full stack CI/CD system with React, Node.js, Websockets & SQLite DB for Fastlane, achieving 70% faster APK & IPA generation & significantly boosting productivity",
     company: "Rently",
   },
   {
