@@ -3,12 +3,13 @@ import emailjs from "@emailjs/browser";
 import { useFormik } from "formik";
 import * as Yup from "yup";
 import { styles } from "../styles";
-import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
 import FormInput from "./FormInput";
+import { useGlobalContext } from "../Context/GlobalContext";
 
 const Contact = () => {
+  const { isMobile } = useGlobalContext();
   const validationSchema = Yup.object().shape({
     name: Yup.string().required("Name is required"),
     email: Yup.string().email("Invalid email").required("Email is required"),
@@ -55,10 +56,10 @@ const Contact = () => {
   });
 
   return (
-    <div className="xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden">
+    <div className={`${isMobile && styles.marginTop} xl:mt-12 overflow-hidden`}>
       <motion.div
         variants={slideIn("left", "tween", 0.2, 1)}
-        className="flex-[0.75] bg-black-100 p-8 rounded-2xl"
+        className="flex-[0.75] black-gradient p-8 rounded-2xl"
       >
         <p className={styles.sectionSubText}>Get in touch</p>
         <h3 className={styles.sectionHeadText}>Contact.</h3>
@@ -102,19 +103,12 @@ const Contact = () => {
 
           <button
             type="submit"
-            className="bg-tertiary py-3 px-8 outline-none w-fit text-white font-bold shadow-md shadow-primary rounded-xl"
+            className="bg-black py-3 px-8 outline-none w-fit text-white font-bold shadow-md shadow-primary rounded-xl"
             disabled={formik.isSubmitting}
           >
             {formik.isSubmitting ? "Sending..." : "Send"}
           </button>
         </form>
-      </motion.div>
-
-      <motion.div
-        variants={slideIn("right", "tween", 0.2, 1)}
-        className="xl:flex-1 xl:h-auto md:h-[550px] h-[350px]"
-      >
-        <EarthCanvas />
       </motion.div>
     </div>
   );

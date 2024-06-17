@@ -1,5 +1,5 @@
 const inputStyles =
-  "bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium";
+  "bg-black py-4 px-6 placeholder:text-slate-300 text-white rounded-lg outline-none border-none font-medium";
 
 const FormInput = ({
   title,
@@ -38,7 +38,7 @@ const FormInput = ({
           className={inputStyles}
         />
       )}
-      {error && <p className="text-red-500 text-sm mt-2">{error}</p>}
+      {error && <p className="text-slate-300 text-sm mt-2">{error}</p>}
     </label>
   );
 };

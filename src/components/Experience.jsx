@@ -1,21 +1,24 @@
+import { motion } from "framer-motion";
 import {
   VerticalTimeline,
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
-import { motion } from "framer-motion";
-
 import "react-vertical-timeline-component/style.min.css";
-
 import { styles } from "../styles";
 import { experiences } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { textVariant } from "../utils/motion";
+import { useGlobalContext } from "../Context/GlobalContext";
+import { PlaneCanvas } from "./canvas";
 
 const ExperienceCard = ({ experience }) => {
   return (
     <VerticalTimelineElement
-      contentStyle={{ background: "#1d1836", color: "#fff" }}
-      contentArrowStyle={{ borderRight: "7px solid #232631" }}
+      contentStyle={{
+        background:
+          "linear-gradient(-270deg, #000000 0%, rgba(60, 51, 80, 0) 100%)",
+      }}
+      contentArrowStyle={{ borderRight: "7px solid #ffffff" }}
       date={experience.date}
       iconStyle={{ background: experience.iconBg }}
       icon={
@@ -31,7 +34,7 @@ const ExperienceCard = ({ experience }) => {
       <div>
         <h3 className="text-white text-[24px] font-bold">{experience.title}</h3>
         <p
-          className="text-secondary text-[16px] font-semibold"
+          className="text-stone-400 text-[16px] font-semibold"
           style={{ margin: 0 }}
         >
           {experience.company_name}
@@ -53,12 +56,25 @@ const ExperienceCard = ({ experience }) => {
 };
 
 const Experience = () => {
+  const width = window.innerWidth;
+  const { isMobile } = useGlobalContext();
+
   return (
     <>
       <motion.div variants={textVariant()}>
         <p className={styles.sectionSubText}>What I have done so far</p>
         <h2 className={styles.sectionHeadText}>Work Experience.</h2>
       </motion.div>
+
+      {!isMobile && (
+        <div
+          className="absolute left-0 -bottom-1/3 z-50 h-full transform -translate-x-1/2"
+          style={{ width: `${width * 1.7}px` }}
+        >
+          <PlaneCanvas />
+        </div>
+      )}
+
       <div className="mt-20 flex flex-col">
         <VerticalTimeline>
           {experiences.map((experience, index) => (

@@ -10,12 +10,14 @@ import close from "./close.svg";
 
 import css from "./tech/css.png";
 import expressjs from "./tech/expressjs.svg";
+import nextjs from "./tech/next.png";
+import fastlane from "./tech/fastlane.png";
 import java from "./tech/java.svg";
 import mongoose from "./tech/mongoose.png";
 import docker from "./tech/docker.png";
 import figma from "./tech/figma.png";
 import android from "./tech/android.png";
-import ios from "./tech/ios.png";
+import ios from "./tech/iOS.png";
 import graphql from "./tech/graphql.png";
 import git from "./tech/git.png";
 import html from "./tech/html.png";
@@ -30,6 +32,8 @@ import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
+
+import smoke from "./smoke.png";
 
 import previous from "./previous.png";
 import next from "./next.png";
@@ -53,6 +57,7 @@ export {
   aora,
   github,
   linkedin,
+  smoke,
   menu,
   close,
   css,
@@ -60,6 +65,8 @@ export {
   next,
   java,
   expressjs,
+  nextjs,
+  fastlane,
   mongoose,
   docker,
   figma,

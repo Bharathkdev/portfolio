@@ -1,4 +1,4 @@
-import { useRef, useState } from "react";
+import { useRef, useState, useEffect } from "react";
 import { Tilt } from "react-tilt";
 import { motion } from "framer-motion";
 
@@ -25,23 +25,43 @@ const ProjectCard = ({
           scale: 1,
           speed: 450,
         }}
-        className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full"
+        className="black-gradient p-5 rounded-2xl sm:w-[360px] w-full"
       >
         <div className="relative w-full h-[230px]">
-          <img src={image} alt={name} className="w-full h-full object-contain rounded-2xl bg-slate-950" />
+          <img
+            src={image}
+            alt={name}
+            className="w-full h-full object-contain rounded-2xl bg-stone-900"
+          />
           <div className="absolute inset-0 flex-end m-3 card-img_hover flex">
-            <div onClick={() => window.open(sourceCode, "_blank")} className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer mr-2">
-              <img src={github} alt="github" className="w-8/12 h-8/12 object-contain" />
+            <div
+              onClick={() => window.open(sourceCode, "_blank")}
+              className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer mr-2"
+            >
+              <img
+                src={github}
+                alt="github"
+                className="w-8/12 h-8/12 object-contain"
+              />
             </div>
-            {linkedinPost && <div onClick={() => window.open(linkedinPost, "_blank")} className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer">
-              <img src={linkedin} alt="linkedin" className="w-10/12 h-10/12 object-contain" />
-            </div>}
+            {linkedinPost && (
+              <div
+                onClick={() => window.open(linkedinPost, "_blank")}
+                className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
+              >
+                <img
+                  src={linkedin}
+                  alt="linkedin"
+                  className="w-10/12 h-10/12 object-contain"
+                />
+              </div>
+            )}
           </div>
         </div>
 
         <div className="mt-5">
           <h3 className="text-white font-bold text-[24px]">{name}</h3>
-          <p className="mt-2 text-secondary text-[14px]">{description}</p>
+          <p className="mt-2 text-stone-300 text-[14px]">{description}</p>
         </div>
 
         <div className="mt-4 flex flex-wrap gap-2">
@@ -77,6 +97,10 @@ const Works = () => {
     }
   };
 
+  useEffect(() => {
+    checkForScrollPosition();
+  }, []);
+
   return (
     <>
       <motion.div variants={textVariant()}>
@@ -87,7 +111,7 @@ const Works = () => {
       <div className="w-full flex">
         <motion.p
           variants={fadeIn("", "", 0.1, 1)}
-          className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]"
+          className="mt-3 text-slate-400 text-[17px] max-w-3xl leading-[30px]"
         >
           {projectsIntro}
         </motion.p>
@@ -105,8 +129,7 @@ const Works = () => {
         <div
           ref={scrollRef}
           onScroll={checkForScrollPosition}
-          className="flex gap-7 overflow-x-auto"
-          style={{ scrollBehavior: "smooth" }}
+          className="flex gap-7 overflow-x-auto hide-scrollbar"
         >
           {projects.map((project, index) => (
             <ProjectCard key={`project-${index}`} index={index} {...project} />
@@ -114,7 +137,7 @@ const Works = () => {
         </div>
         {canScrollRight && (
           <button
-            className="absolute right-0 z-10 p-2 bg-white-100 rounded-full transform -translate-y-1/2 top-1/2"
+            className="absolute right-0 z-10 p-2 bg-stone-400 rounded-full transform -translate-y-1/2 top-1/2"
             onClick={() => handleScroll("right")}
           >
             <img src={next} alt="next" className="w-10 h-10" />

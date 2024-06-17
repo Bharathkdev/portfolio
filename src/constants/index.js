@@ -9,12 +9,9 @@ import {
   tailwind,
   nodejs,
   mongodb,
-  git,
   rently,
   igt,
-  expressjs,
   graphql,
-  firebase,
   android,
   ios,
   moneymanager,
@@ -24,6 +21,8 @@ import {
   aora,
   Portfolio,
   customKeyboard,
+  nextjs,
+  fastlane,
 } from "../assets";
 
 export const navLinks = [
@@ -88,6 +87,10 @@ const technologies = [
     icon: reactjs,
   },
   {
+    name: "Next JS",
+    icon: nextjs,
+  },
+  {
     name: "Android",
     icon: android,
   },
@@ -98,10 +101,6 @@ const technologies = [
   {
     name: "Node JS",
     icon: nodejs,
-  },
-  {
-    name: "Express JS",
-    icon: expressjs,
   },
   {
     name: "MongoDB",
@@ -120,12 +119,8 @@ const technologies = [
     icon: graphql,
   },
   {
-    name: "firebase",
-    icon: firebase,
-  },
-  {
-    name: "git",
-    icon: git,
+    name: "Fastlane",
+    icon: fastlane,
   },
 ];
 
@@ -134,34 +129,34 @@ const experiences = [
     title: "Senior Software Developer",
     company_name: "Rently",
     icon: rently,
-    iconBg: "#383E56",
+    iconBg: "#D77232",
     date: "June 2019 - May 2023",
     points: [
-      "Led the development of a web & mobile Smart home Rental Application with 5000+ daily active users working on IoT, VWO (A/B testing), MQTT, Bluetooth, Payment gateway, Maps, Heap, Sentry, App Center & Firebase.",
-      "Spearheading the development and maintenance of 3 diverse applications, while adeptly handling 10 white-labeled applications.",
-      "Pioneered in MQTT & Bluetooth Hardware(BLE) integration for accessing 12+ iOT devices (Hubs, Smart Locks, Sensors, etc.) from the application User Interface.",
-      "Integrated Beans Map, effectively addressing the user navigation challenge and contributing to a 10% rise in app downloads.",
-      "Practical knowledge in code signing, app store reviews & code push.",
-      "Conducted 100+ code reviews, emphasizing high code quality through coding best practices.",
-      "Competent in UI/UX design patterns, with a hands on approach for creating visually appealing & user-centric interfaces using Figma, Adobe, Miro, Material UI & React Native elements library.",
+      "Led the development of a web & mobile Smart Home Rental Application with 5000+ daily active users working on IoT, Maps, Animations, Payment gateway, Heap, Sentry & Firebase.",
+      "Successfully delivered & maintained 3 React applications, including a full-stack maps navigation application, along with 2 React Native projects.",
+      "Promoted Agile methodologies, collaborating with Product Owners and Managers on technical challenges & user insights (Heap & Firebase analytics) to drive project success.",
+      "Proficient in unit, integration & end-to-end testing and efficiently addressed 200+ bugs, resulting in increased app ratings to 4.7 on Android and 4.8 on iOS.",
+      "Efficiently reduced technical debts by over 40%, optimizing the codebase & enhancing application security.",
+      "Skilled in codepush deployment, app store review management, and code signing.",
+      "Conducted 100+ code reviews, emphasizing high-quality code through clean code principles.",
       "Mentored 10+ junior developers to deliver multiple modules in the Smart Home application.",
-      "Facilitated Authentication (AWS and Azure SSO) & in-app chat (ADA Chatbot) integrations.",
+      "Competent in UI/UX design patterns, with a hands on approach for creating visually appealing & user-centric interfaces using Figma, Adobe, Miro & Material UI library.",
+      "Facilitated Authentication (AWS and Azure SSO) & in-app chat (ADA Chatbot) integrations."
     ],
   },
   {
     title: "Software Engineer Dev 2",
     company_name: "IGT",
     icon: igt,
-    iconBg: "#E6DEDD",
+    iconBg: "#ffffff",
     date: "May 2023 - Present",
     points: [
       "Leading the development of complex, responsive UI components using React and React Native for a lottery gaming application, which serves over 2,000 daily active users.",
-      "Experienced in Monorepo setup, contributing to 110+ private npm packages, enhancing streamlined development and maximizing code reusability across projects.",
-      "Implementing robust automated workflows with GitHub Actions and Dependabot, saving the team 2+ hours daily & efficiently managing the outdated dependencies.",
+      "Experienced in working with Monorepo architecture & Lerna, with active contributions to the creation & maintenance of over 110+ private npm packages.",
+      "Designing captivating 3D animations with Three.js for visually compelling UI enhancements.",
+      "Implementing robust automated workflows with Github Actions and Dependabot, saving the team 2+ hours daily & efficiently managing the outdated dependencies.",
       "Played a pivotal role in achieving a smooth React Native upgrade.",
-      "Significant contributor to the development of the native Biometric Authentication module.",
-      "Leveraging native APIs & SDKs for both Android & iOS integration (Objective-C/ Java).",
-      "Integrating the customer engagement platform Xtremepush, resulting in enhanced customer engagement, boosting company revenues.",
+      "Integrating the customer engagement platform Xtremepush, resulting in enhanced customer engagement, boosting company revenues."
     ],
   },
 ];
@@ -169,22 +164,22 @@ const experiences = [
 const achievements = [
   {
     achievement:
-      "Initiated Tech Tuesday meetups and eliminated multiple production issues by discussing, documenting and implementing best solutions collaboratively.",
+      "Integrated Beans Map(precise Geocoding), effectively addressing the user navigation challenge & contributing to a 40% improvement in user retention.",
+    company: "Rently",
+  },
+  {
+    achievement:
+      "Effectively completed multiple feature developments, including advanced data visualization & UI/UX enhancements, alongside successful proofs of concept (POCs).",
+    company: "Rently",
+  },
+  {
+    achievement:
+      "Architected & implemented a full stack CI/CD system for Fastlane using React, Node.js, WebSockets & SQLite DB, leading to a notable increase in overall efficiency and output.",
     company: "IGT",
   },
   {
     achievement:
-      "Achieved building own CI/CD system with Fastlane, saving the team 6+ hours per day for build generation, beta and store releases.",
-    company: "Rently",
-  },
-  {
-    achievement:
-      "Developed a dynamic Full stack CI/CD system with React, Node.js, Websockets & SQLite DB for Fastlane, achieving 70% faster APK & IPA generation & significantly boosting productivity.",
-    company: "Rently",
-  },
-  {
-    achievement:
-      "Achieved a 100% test case coverage by implementing the Appium framework for automated tests.",
+      "Achieved a 100% tests coverage by implementing the Jest framework for automated tests.",
     company: "Rently",
   },
   {
@@ -194,8 +189,8 @@ const achievements = [
   },
   {
     achievement:
-      "Optimized app performance & user experience by 25% by integrating Firebase Performance Monitoring & shopify performance libraries.",
-    company: "Rently",
+      "Optimized app performance & user experience by 25% by integrating Firebase Performance Monitoring & shopify performance libraries & iterated based on metrics insights.",
+    company: "IGT",
   },
   {
     achievement:
@@ -204,12 +199,12 @@ const achievements = [
   },
   {
     achievement:
-      "Efficiently addressed 200+ bugs, resulting in increased app ratings to 4.7 on Android and 4.8 on iOS.",
-    company: "Rently & IGT",
+      "Initiated Tech Tuesday meetups and eliminated multiple production issues by discussing, documenting and implementing best solutions collaboratively.",
+    company: "IGT",
   },
   {
     achievement:
-      "Released 10+ React & React native applications in production environments successfully with automated releases(Fastlane).",
+      "Building & deploying 10+ React & React Native applications in production environments.",
     company: "Rently & IGT",
   },
 ];
@@ -243,7 +238,8 @@ const projects = [
     ],
     image: Portfolio,
     sourceCode: "https://github.com/Bharathkdev/portfolio",
-    linkedinPost: "https://www.linkedin.com/posts/bharathrna_reactjs-threejs-tailwindcss-activity-7179008939152273408-fBbD?utm_source=share&utm_medium=member_desktop",
+    linkedinPost:
+      "https://www.linkedin.com/posts/bharathrna_reactjs-threejs-tailwindcss-activity-7179008939152273408-fBbD?utm_source=share&utm_medium=member_desktop",
   },
   {
     name: "Event Platform",
@@ -273,7 +269,8 @@ const projects = [
     ],
     image: evently,
     sourceCode: "https://github.com/Bharathkdev/event_platform",
-    linkedinPost: "https://www.linkedin.com/posts/bharathrna_reactjs-nextjs-mongodb-activity-7178368379722821632-ESkr?utm_source=share&utm_medium=member_desktop",
+    linkedinPost:
+      "https://www.linkedin.com/posts/bharathrna_reactjs-nextjs-mongodb-activity-7178368379722821632-ESkr?utm_source=share&utm_medium=member_desktop",
   },
   {
     name: "Money Manager App",
@@ -303,7 +300,8 @@ const projects = [
     ],
     image: moneymanager,
     sourceCode: "https://github.com/Bharathkdev/expenseTrackerApp",
-    linkedinPost: "https://www.linkedin.com/posts/bharathrna_reactnative-javascript-firebase-activity-7118224386054135808-VeKD?utm_source=share&utm_medium=member_desktop",
+    linkedinPost:
+      "https://www.linkedin.com/posts/bharathrna_reactnative-javascript-firebase-activity-7118224386054135808-VeKD?utm_source=share&utm_medium=member_desktop",
   },
   {
     name: "Expo Full-Stack Video Sharing App",
@@ -333,7 +331,8 @@ const projects = [
     ],
     image: aora,
     sourceCode: "https://github.com/Bharathkdev/full_stack_expo_app",
-    linkedinPost: "https://www.linkedin.com/posts/bharathrna_a-full-stack-react-native-video-streaming-activity-7199439106756468736-ZXqI?utm_source=share&utm_medium=member_desktop",
+    linkedinPost:
+      "https://www.linkedin.com/posts/bharathrna_a-full-stack-react-native-video-streaming-activity-7199439106756468736-ZXqI?utm_source=share&utm_medium=member_desktop",
   },
   {
     name: "Custom Keyboard App",
@@ -363,7 +362,8 @@ const projects = [
     ],
     image: customKeyboard,
     sourceCode: "https://github.com/Bharathkdev/custom_keyboard",
-    linkedinPost: "https://www.linkedin.com/posts/bharathrna_hello-all-i-recently-challenged-myself-activity-7205568376868401152-tHcu?utm_source=share&utm_medium=member_desktop",
+    linkedinPost:
+      "https://www.linkedin.com/posts/bharathrna_hello-all-i-recently-challenged-myself-activity-7205568376868401152-tHcu?utm_source=share&utm_medium=member_desktop",
   },
   {
     name: "E-Commerce App",
