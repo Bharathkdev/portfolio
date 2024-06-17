@@ -11,6 +11,7 @@ import { useGlobalContext } from "../../Context/GlobalContext";
 
 const Plane = () => {
   const group = useRef();
+  const { isMobile } = useGlobalContext();
   const { scene, animations } = useGLTF("./plane/scene.gltf");
   const { actions } = useAnimations(animations, group);
   const { lightningVisible } = useGlobalContext();
@@ -42,7 +43,7 @@ const Plane = () => {
       <primitive
         ref={group}
         object={scene}
-        scale={1.4}
+        scale={!isMobile ? 0.9 : 1.5}
         position={[-1, 0.5, -0.3]}
         rotation={[0, Math.PI, 0]}
       />
