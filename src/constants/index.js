@@ -19,7 +19,7 @@ import {
   fullstack,
   evently,
   aora,
-  Portfolio,
+  portfolio,
   customKeyboard,
   nextjs,
   fastlane,
@@ -236,7 +236,7 @@ const projects = [
         color: "orange-text-gradient",
       },
     ],
-    image: Portfolio,
+    image: portfolio,
     sourceCode: "https://github.com/Bharathkdev/portfolio",
     linkedinPost:
       "https://www.linkedin.com/posts/bharathrna_reactjs-threejs-tailwindcss-activity-7179008939152273408-fBbD?utm_source=share&utm_medium=member_desktop",
