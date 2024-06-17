@@ -124,9 +124,9 @@ const Lightning = ({ onLightningVisible, lightningVisible }) => {
     const lightningParams = {
       sourceOffset: sourceOffset, // Start above the screen
       destOffset: new THREE.Vector3(0, -100, 0), // End below the screen
-      radius0: 0.01,
-      radius1: 0.01,
-      minRadius: 0.01,
+      radius0: 0.02,
+      radius1: 0.02,
+      minRadius: 0.02,
       maxIterations: 7,
       isEternal: true,
       timeScale: 0.2, // Slower time scale
