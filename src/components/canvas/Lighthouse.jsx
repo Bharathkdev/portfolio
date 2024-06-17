@@ -24,7 +24,7 @@ const Lighthouse = () => {
   return (
     <mesh>
       <hemisphereLight
-        intensity={lightningVisible ? 1 : 0.05}
+        intensity={lightningVisible ? 2 : 0.05}
         groundColor="black"
       />
       <spotLight

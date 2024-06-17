@@ -54,9 +54,7 @@ const Achievements = () => {
         viewport={{ once: true, amount: 0.25 }}
         className={`${styles.padding} max-w-7xl mx-auto relative z-0`}
       >
-        <div className="hash-span">
-          {achievementsContent}
-        </div>
+      {achievementsContent}
     </motion.section> ) : (
     <motion.section
        variants={staggerContainer()}

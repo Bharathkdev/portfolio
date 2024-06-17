@@ -6,10 +6,8 @@ import { styles } from "../styles";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
 import FormInput from "./FormInput";
-import { useGlobalContext } from "../Context/GlobalContext";
 
 const Contact = () => {
-  const { isMobile } = useGlobalContext();
   const validationSchema = Yup.object().shape({
     name: Yup.string().required("Name is required"),
     email: Yup.string().email("Invalid email").required("Email is required"),
@@ -56,7 +54,7 @@ const Contact = () => {
   });
 
   return (
-    <div className={`${isMobile && styles.marginTop} xl:mt-12 overflow-hidden`}>
+    <div className={`xl:mt-12 overflow-hidden`}>
       <motion.div
         variants={slideIn("left", "tween", 0.2, 1)}
         className="flex-[0.75] black-gradient p-8 rounded-2xl"

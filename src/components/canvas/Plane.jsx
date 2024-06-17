@@ -23,7 +23,7 @@ const Plane = () => {
   return (
     <mesh>
       <hemisphereLight
-        intensity={lightningVisible ? 1 : 0.02}
+        intensity={lightningVisible ? 2 : 0.02}
         groundColor="white"
       />
       <spotLight

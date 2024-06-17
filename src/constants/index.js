@@ -49,10 +49,10 @@ export const navLinks = [
 ];
 
 const Introduction =
-  "I'm a Software Engineer with 5 years of experience in developing robust full-stack Mobile and Web applications using frameworks such as React Native, React.js, Next.js and Node.js. I specialize in crafting complex applications and am known for ensuring excellence and uniformity across every stage of software development initiatives.";
+  "I'm a Software Engineer with 5+ years of experience in developing robust full-stack Web and Mobile applications using frameworks such as React.js, React Native, Three.js, Next.js and Node.js. I specialize in crafting complex applications and am known for ensuring excellence and uniformity across every stage of software development initiatives.";
 
 const projectsIntro =
-  "Following projects showcases my skills and experience through real-world examples of my work. Each project is briefly described with links to code repositories and relevant LinkedIn posts. It reflects my ability to solve complex problems, work with different technologies, and manage projects effectively.";
+  "The following projects demonstrate my skills and experience through real-world examples of my work. Each project is briefly described, with links to code repositories and relevant LinkedIn posts. They showcase my proficiency in solving complex problems, my passion for learning and integrating diverse technologies, and my adeptness in technical project management and execution.";
 
 const services = [
   {
