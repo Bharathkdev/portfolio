@@ -2,7 +2,7 @@
    <a href="https://bharath-devportfolio.netlify.app/" align="center" target="_blank" rel="noreferrer">React 3D Portfolio</a>
 </div>
 
-![alt text](src/assets/Portfolio.png)
+![Screenshot 2024-06-17 at 1 23 06 PM](https://github.com/Bharathkdev/portfolio/assets/46343966/9dd5e023-7ef3-4651-9432-69ea054fdb60)
 
 ## 📋 <a name="table">Table of Contents</a>
 
