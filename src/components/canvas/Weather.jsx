@@ -181,7 +181,7 @@ const Scene = () => {
       <ambientLight intensity={0.5} />
       <directionalLight position={[0, 0, 1]} intensity={0.5} />
       <Clouds lightningVisible={lightningVisible} />
-      <Rain rainCount={70000} />
+      <Rain rainCount={150000} />
       <Lightning
         onLightningVisible={handleLightningVisible}
         lightningVisible={lightningVisible}

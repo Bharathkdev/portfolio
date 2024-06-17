@@ -55,7 +55,7 @@ const Navbar = () => {
               key={link.id}
               className={`${
                 active === link.title ? "text-[#0CAFFF]" : "text-white"
-              } hover:text-secondary text-[18px] font-medium cursor-pointer`}
+              } hover:text-[#0CAFFF] text-[18px] font-medium cursor-pointer`}
               onClick={() => {
                 if (link.id !== "resume" && link.id !== "blog") {
                   setActive(link.title);
