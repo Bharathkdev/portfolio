@@ -17,7 +17,7 @@ import mongoose from "./tech/mongoose.png";
 import docker from "./tech/docker.png";
 import figma from "./tech/figma.png";
 import android from "./tech/android.png";
-import ios from "./tech/iOS.png";
+import ios from "./tech/ios.png";
 import graphql from "./tech/graphql.png";
 import git from "./tech/git.png";
 import html from "./tech/html.png";
