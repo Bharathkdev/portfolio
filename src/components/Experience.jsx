@@ -69,8 +69,8 @@ const Experience = () => {
 
       {!isMobile && (
         <div
-          className="absolute left-0 -bottom-2/3 z-50 transform -translate-x-1/2"
-          style={{ width: `${width * 1.6}px`, height: `${height * 3}px` }}
+          className="absolute left-0 -bottom-2/3 z-50 ml-60 transform -translate-x-1/2"
+          style={{ width: `${width * 1.4}px`, height: `${height * 3}px` }}
         >
           <PlaneCanvas />
         </div>
