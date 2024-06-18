@@ -239,7 +239,7 @@ const projects = [
     image: portfolio,
     sourceCode: "https://github.com/Bharathkdev/portfolio",
     linkedinPost:
-      "https://www.linkedin.com/posts/bharathrna_reactjs-threejs-tailwindcss-activity-7179008939152273408-fBbD?utm_source=share&utm_medium=member_desktop",
+      "https://www.linkedin.com/posts/bharathrna_reactjs-threejs-tailwindcss-activity-7208475385955590144-j3N0?utm_source=share&utm_medium=member_desktop",
   },
   {
     name: "Event Platform",
