@@ -44,7 +44,7 @@ import rently from "./company/rently.png";
 import moneymanager from "./moneymanager.jpeg";
 import ecommerce from "./e-commerce.jpg";
 import evently from "./evently.png";
-import portfolio from "./portfolio.png";
+import Portfolio from "./Portfolio.png";
 import aora from './aora.png';
 import customKeyboard from './customKeyboard.png';
 
@@ -91,6 +91,6 @@ export {
   moneymanager,
   ecommerce,
   evently,
-  portfolio,
+  Portfolio,
   customKeyboard
 };

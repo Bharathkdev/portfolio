@@ -19,10 +19,10 @@ import {
   fullstack,
   evently,
   aora,
-  portfolio,
   customKeyboard,
   nextjs,
   fastlane,
+  Portfolio,
 } from "../assets";
 
 export const navLinks = [
@@ -236,7 +236,7 @@ const projects = [
         color: "orange-text-gradient",
       },
     ],
-    image: portfolio,
+    image: Portfolio,
     sourceCode: "https://github.com/Bharathkdev/portfolio",
     linkedinPost:
       "https://www.linkedin.com/posts/bharathrna_reactjs-threejs-tailwindcss-activity-7208475385955590144-j3N0?utm_source=share&utm_medium=member_desktop",
