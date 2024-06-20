@@ -5,16 +5,17 @@ const Loader = () => {
 
   return (
     <Html>
-      <span className="canvas-load"></span>
+      <span className="canvas-loader"></span>
       <p
         style={{
           fontSize: 14,
           color: "#f1f1f1",
           fontWeight: 800,
           marginTop: 40,
+          width: '500px',
         }}
       >
-        {progress.toFixed(2)}%
+        3D model is loading... {progress.toFixed(2)}%
       </p>
     </Html>
   );
