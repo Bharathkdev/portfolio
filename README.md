@@ -36,7 +36,7 @@ Discover my interactive 3D portfolio crafted in React, Three.js, React Three Fib
 
 👉 **Integrated Email Functionality:** Stay connected effortlessly with integrated email functionality, allowing users to contact me directly through email.
 
-👉 **3D Models Usage:** Engage with 3D models used in the intro, tech stack, and contact us sections, adding visual interest and depth to the portfolio.
+👉 **3D Models Usage:** Engage with 3D models used in the intro, experience, tech stack, and contact us sections, adding visual interest and depth to the portfolio.
 
 👉 **Resume Download Option:** Access a downloadable resume directly from the portfolio, providing visitors with a convenient way to learn more about my qualifications and experience.
 
