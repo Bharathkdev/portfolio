@@ -1,6 +1,6 @@
 import { Html, useProgress } from "@react-three/drei";
 
-const Loader = () => {
+const Loader = ({ onlyNumbers = false }) => {
   const { progress } = useProgress();
 
   return (
@@ -15,7 +15,7 @@ const Loader = () => {
           width: '500px',
         }}
       >
-        3D model is loading... {progress.toFixed(2)}%
+        {!onlyNumbers && `3D model is loading...`} {progress.toFixed(2)}%
       </p>
     </Html>
   );
