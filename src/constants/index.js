@@ -179,7 +179,7 @@ const achievements = [
   },
   {
     achievement:
-      "Achieved a 100% tests coverage by implementing the Jest framework for automated tests.",
+      "Achieved 100% test case coverage by implementing the Jest and Detox frameworks for unit, integration, and end-to-end testing.",
     company: "Rently",
   },
   {
